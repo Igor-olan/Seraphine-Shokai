@@ -1,11 +1,10 @@
-import React from "react";
 import DarkMode from "./DarkMode";
 
 const Menu = [
   {
     id: 1,
     name: "Home",
-    link: "/#",
+    link: "/",
   },
   {
     id: 2,
@@ -29,14 +28,14 @@ const Menu = [
   }
 ];
 
-const Navbar = ({ handleOrderPopup }) => {
+const Navbar = () => {
   return (
     <>
       <div className="shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200">
         <div className="container py-3 sm:py-0">
           <div className="flex justify-between items-center">
             <div>
-              <a href="#" className="font-bold text-2xl sm:text-3xl flex gap-2">
+              <a href="/" className="font-bold text-2xl sm:text-3xl flex gap-2">
                 Sheraphine Shokai
               </a>
             </div>
@@ -55,7 +54,6 @@ const Navbar = ({ handleOrderPopup }) => {
                     </a>
                   </li>
                 ))}
-                {/* Simple Dropdown and Links */}
               </ul>
             </div>
           </div>
