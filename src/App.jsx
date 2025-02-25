@@ -6,6 +6,8 @@ import Updates from './pages/Updates'
 
 const App = () => {
   return (
+    <div className="dark:bg-gray-900 duration-200">
+
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -14,6 +16,7 @@ const App = () => {
       </Routes>
       <Footer />
     </BrowserRouter>
+    </div>
   )
 }
 

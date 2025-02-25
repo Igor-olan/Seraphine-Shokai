@@ -1,7 +1,8 @@
 import React from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import Books from '../components/BooksSlider/Books'
+import Release from '../components/Update/Release'
+import Schedule from '../components/Update/Schedule'
 
 const Updates = () => {
 
@@ -16,9 +17,10 @@ const Updates = () => {
       }, []);
 
   return (
-    <>
-        <Books />
-    </>
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+        <Release />
+        <Schedule />
+    </div>
   )
 }
 

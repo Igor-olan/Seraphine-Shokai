@@ -3,7 +3,8 @@ import Hero from "../components/Hero/Hero";
 // import Banner from "../components/Banner/Banner.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Books from "../components/BooksSlider/Books.jsx";
+import Release from "../components/Update/Release.jsx";
+// import Footer from "../components/Footer/Footer";
 
 const App = () => {
 
@@ -18,11 +19,12 @@ const App = () => {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200"> 
       <Hero />
       {/* <Banner /> */}
       {/* <CoverBanner /> */}
-      <Books />
+      <Release />
+      {/* <Footer /> */}
     </div>
   );
 };
