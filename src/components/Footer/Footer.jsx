@@ -25,6 +25,7 @@ const FooterLinks = [
   },
 ];
 const Footer = () => {
+  
   return (
     <div className="bg-gray-100 dark:bg-gray-950">
       <section className="container">
