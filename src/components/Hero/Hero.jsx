@@ -97,7 +97,7 @@ const Hero = () => {
                       setTitle(item.title);
                       setDescription(item.description);
                     }}
-                    className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-110 duration-200"
+                    className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-105 duration-200 "
                   />
                 ))}
               </div>

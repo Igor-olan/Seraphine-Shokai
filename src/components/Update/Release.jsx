@@ -56,10 +56,10 @@ const Books = () => {
 
           {/* Body section */}
           <div data-aos="fade-up" data-aos-delay="200">
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 ">
               {/* Card */}
               {booksData.map(({ id, img, title, rating, author }) => (
-                <div key={id} className="div space-y-3">
+                <div key={id} className="div space-y-3 transition-transform duration-300 hover:scale-105">
                   <img
                     src={img}
                     alt=""
