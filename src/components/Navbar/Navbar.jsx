@@ -9,22 +9,22 @@ const Menu = [
   {
     id: 2,
     name: "Updates",
-    link: "/updates",
+    link: "updates",
   },
   {
     id: 3,
     name: "History",
-    link: "/history",
+    link: "history",
   },
   {
     id: 4,
     name: "Subscription",
-    link: "/subscription",
+    link: "subscription",
   },
   {
     id: 5,
     name: "Settings",
-    link: "/settings"
+    link: "settings"
   }
 ];
 
