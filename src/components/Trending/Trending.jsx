@@ -45,7 +45,7 @@ const Trending = () => {
           <h1 className="text-4xl font-bold" data-aos="zoom-out">Trending</h1>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center" data-aos="fade-up" data-aos-delay="200">
           {booksData.length > 0 && (
             <div className="md:col-span-1 flex flex-col items-center transition-transform duration-300 hover:scale-105">
               <img
@@ -79,7 +79,7 @@ const Trending = () => {
 
             <div className="grid grid-cols-2 gap-5">
               {booksData.slice(3).map(({ id, img, title, rating, author }) => (
-                <div key={id} className="flex flex-col items-center space-y-3 transition-transform duration-300 hover:scale-105">
+                <div key={id} className="flex flex-col items-center space-y-3 transition-transform duration-200 hover:scale-105">
                   <img src={img} alt={title} className="h-[200px] w-[140px] object-cover rounded-md" />
                   <h3 className="font-semibold text-center">{title}</h3>
                   <p className="text-sm text-gray-700 dark:text-white">{author}</p>

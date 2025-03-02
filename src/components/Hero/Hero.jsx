@@ -86,10 +86,12 @@ const Hero = () => {
               </div>
               <div className="flex lg:flex-col lg:top-1/2 lg:-translate-y-1/2 lg:py-2 justify-center gap-4 absolute -bottom-[40px] lg:-right-1">
                 {ImageList.map((item) => (
+                  <div key={item.id} className="transition-transform hover:scale-105 duration-200">
                   <img
                     data-aos="zoom-in"
                     data-aos-once="true"
                     src={item.img}
+                    className="max-w-[100px] h-[100px] object-contain inline-block "
                     onClick={() => {
                       setImageId(
                         item.id === 1 ? Book1 : item.id === 2 ? Book2 : Book3
@@ -97,8 +99,8 @@ const Hero = () => {
                       setTitle(item.title);
                       setDescription(item.description);
                     }}
-                    className="max-w-[100px] h-[100px] object-contain inline-block hover:scale-105 duration-200 "
-                  />
+                    />
+                  </div>
                 ))}
               </div>
             </div>

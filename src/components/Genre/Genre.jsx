@@ -151,7 +151,7 @@ const Genre = () => {
                 <h1 className="text-4xl font-bold" data-aos="zoom-out">Genres</h1>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center" data-aos="zoom-out" data-aos-delay="300">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center" data-aos="zoom-out" data-aos-delay="200">
                 {GenreList.map(({ id, gen }) => (
                     <div key={id} className="div space-y-3">
                       <div>
