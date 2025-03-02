@@ -5,8 +5,12 @@ import Footer from './components/Footer/Footer'
 import Updates from './pages/Updates'
 
 const App = () => {
+
+  
   return (
-    <div className="dark:bg-gray-900 duration-200">
+
+    
+    <div className="dark:bg-gray-900 duration-200 ">
 
     <BrowserRouter>
       <Navbar />
@@ -17,6 +21,8 @@ const App = () => {
       <Footer />
     </BrowserRouter>
     </div>
+
+    
   )
 }
 

@@ -17,7 +17,7 @@ const Updates = () => {
       }, []);
 
   return (
-    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
+    <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow">
         <Release />
         <Schedule />
     </div>
