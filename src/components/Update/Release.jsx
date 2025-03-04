@@ -59,7 +59,7 @@ const Books = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 place-items-center gap-5 ">
               {/* Card */}
               {booksData.map(({ id, img, title, rating, author }) => (
-                <div key={id} className="div space-y-3 transition-transform duration-200 hover:scale-105">
+                <div key={id} className="div space-y-3 transition-transform duration-200 hover:scale-105 flex flex-col justify-center items-center cursor-pointer">
                   <img
                     src={img}
                     alt=""
@@ -75,6 +75,9 @@ const Books = () => {
                   </div>
                 </div>
               ))}
+            </div>
+            <div className="text-center">
+                <h3 className="dark:text-white text-2xl font-semibold px-4 py-2 mt-5 transition duration-200 cursor-pointer">View All</h3>
             </div>
           </div>
         </div>

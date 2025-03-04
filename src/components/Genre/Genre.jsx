@@ -147,15 +147,15 @@ const Genre = () => {
   return (
     <div className="mt-14 mb-12">
         <div className="container">
-            <div className="mb-10 max-w-[600px] mx-auto">
+            <div className="mb-10 max-w-[600px] mx-auto text-center">
                 <h1 className="text-4xl font-bold" data-aos="zoom-out">Genres</h1>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 items-center" data-aos="zoom-out" data-aos-delay="200">
                 {GenreList.map(({ id, gen }) => (
                     <div key={id} className="div space-y-3">
-                      <div>
-                        <Card className="border rounded-md p-1 shadow-sm hover:border-blue-500 transition hover:text-blue-500">
+                      <div className="border-[0.15em] rounded-md p-1 shadow-sm hover:border-primary transition hover:text-primary">
+                        <Card className="">
                         <h3 className="font-semibold">{gen}</h3>
                         </Card>
                         </div>
